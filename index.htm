@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Official website of Mr Mystery. Discover music, lyrics and new releases.">
+<meta name="description" content="Official website of Mr Mystery. Discover music and lyrics.">
 <title>Mr Mystery | Official Website</title>
 
 <style>
@@ -19,20 +19,19 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   background: #070707;
   color: white;
-  line-height: 1.6;
-  overflow-x: hidden;
+  line-height: 1.7;
 }
 
 nav {
   position: sticky;
   top: 0;
-  z-index: 1000;
-  background: rgba(5,5,5,.97);
-  border-bottom: 1px solid #252525;
-  padding: 15px 10px;
+  z-index: 100;
+  background: #080808;
+  border-bottom: 1px solid #292929;
+  padding: 15px 8px;
   text-align: center;
 }
 
@@ -40,13 +39,13 @@ nav {
   font-size: 21px;
   font-weight: bold;
   letter-spacing: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 nav a {
   color: #ccc;
   text-decoration: none;
-  margin: 0 7px;
+  margin: 0 6px;
   font-size: 13px;
 }
 
@@ -55,62 +54,41 @@ nav a:hover {
 }
 
 .hero {
-  min-height: 75vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 70px 20px;
-  background:
-    radial-gradient(circle at 50% 15%, rgba(170,0,0,.5), transparent 45%),
-    linear-gradient(145deg,#170000,#050505 70%);
-}
-
-.hero-content {
-  max-width: 800px;
-}
-
-.small-text {
-  color: #ff3030;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 4px;
-  margin-bottom: 18px;
+  padding: 60px 20px;
+  background: radial-gradient(circle at top, #500000, #080808 70%);
 }
 
 .hero h1 {
-  font-size: clamp(42px,12vw,82px);
-  letter-spacing: 7px;
-  line-height: 1.2;
-  margin-bottom: 20px;
+  font-size: clamp(42px, 12vw, 80px);
+  letter-spacing: 6px;
+  margin: 15px 0;
 }
 
 .hero p {
   color: #ccc;
   font-size: 18px;
-  max-width: 600px;
-  margin: auto;
 }
 
-.buttons {
-  margin-top: 28px;
+.small-text {
+  color: #ff3030;
+  letter-spacing: 4px;
+  font-size: 13px;
 }
 
 .btn {
   display: inline-block;
-  padding: 14px 23px;
-  margin: 6px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
   background: #e50914;
   color: white;
-  transition: .2s;
-}
-
-.btn:hover {
-  background: #ff3030;
-  transform: translateY(-2px);
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  margin: 6px;
+  font-weight: bold;
 }
 
 .btn.dark {
@@ -119,115 +97,105 @@ nav a:hover {
 }
 
 section {
-  width: 100%;
   max-width: 950px;
   margin: auto;
-  padding: 75px 20px;
-  scroll-margin-top: 100px;
+  padding: 65px 20px;
+  scroll-margin-top: 110px;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .section-title h2 {
-  font-size: 34px;
-  margin-bottom: 8px;
+  font-size: 32px;
 }
 
 .section-title p {
-  color: #888;
+  color: #999;
 }
 
 .featured {
-  background: linear-gradient(135deg,#310000,#0b0b0b);
-  border: 1px solid #481111;
-  border-radius: 25px;
-  padding: 30px 20px;
+  background: linear-gradient(135deg,#350000,#111);
+  border: 1px solid #511111;
+  border-radius: 22px;
+  padding: 28px 20px;
   text-align: center;
 }
 
 .cover {
   display: block;
   width: 100%;
-  max-width: 330px;
-  aspect-ratio: 1 / 1;
+  max-width: 300px;
+  aspect-ratio: 1;
   object-fit: cover;
-  margin: 0 auto 25px;
-  border-radius: 18px;
-  box-shadow: 0 15px 45px rgba(0,0,0,.6);
-}
-
-.song-number {
-  color: #ff3030;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 3px;
-}
-
-.featured h3 {
-  font-size: 30px;
-  margin: 12px 0;
-}
-
-.featured p {
-  color: #ccc;
-  max-width: 650px;
-  margin: auto;
+  margin: 0 auto 20px;
+  border-radius: 15px;
 }
 
 .music-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 18px;
   margin-top: 25px;
 }
 
 .song-card {
-  background: linear-gradient(145deg,#191919,#0e0e0e);
+  background: #151515;
   border: 1px solid #292929;
-  border-radius: 20px;
-  padding: 27px;
+  border-radius: 18px;
+  padding: 25px;
 }
 
 .song-card h3 {
-  font-size: 24px;
-  margin: 12px 0 5px;
+  font-size: 23px;
 }
 
 .song-card p {
   color: #999;
-  margin-bottom: 15px;
 }
 
-.lyrics-box {
-  background: #101010;
-  border: 1px solid #282828;
-  border-radius: 20px;
-  padding: 28px;
-  color: #ddd;
+.song-number {
+  color: #ff3030;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.lyrics-card {
+  background: #111;
+  border: 1px solid #292929;
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.lyrics-card h3 {
+  font-size: 25px;
+  color: #ff3030;
+  margin-bottom: 18px;
+}
+
+.lyrics-card h4 {
+  color: white;
+  margin-top: 23px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.lyrics-card p {
+  color: #ccc;
   white-space: pre-line;
 }
 
-.lyrics-box h3 {
-  font-size: 25px;
-  margin-bottom: 20px;
-  color: white;
-}
-
 .about-box {
+  background: #111;
+  border: 1px solid #292929;
+  border-radius: 18px;
+  padding: 30px;
   text-align: center;
-  background: #101010;
-  border-radius: 20px;
-  padding: 35px 25px;
-  border: 1px solid #222;
-}
-
-.about-box p {
   color: #ccc;
-  max-width: 700px;
-  margin: auto;
 }
 
 .social {
@@ -236,37 +204,23 @@ section {
 
 footer {
   text-align: center;
-  border-top: 1px solid #222;
-  padding: 35px 20px;
-  color: #777;
-  background: #050505;
-}
-
-footer strong {
-  color: white;
+  padding: 30px 15px;
+  border-top: 1px solid #292929;
+  color: #888;
 }
 
 @media(max-width:600px) {
   nav a {
-    margin: 0 5px;
-    font-size: 12px;
+    font-size: 11px;
+    margin: 0 4px;
+  }
+
+  section {
+    padding: 50px 16px;
   }
 
   .hero {
     min-height: 65vh;
-    padding: 60px 18px;
-  }
-
-  .hero h1 {
-    letter-spacing: 5px;
-  }
-
-  section {
-    padding: 60px 17px;
-  }
-
-  .section-title h2 {
-    font-size: 29px;
   }
 }
 </style>
@@ -284,22 +238,18 @@ footer strong {
 </nav>
 
 <header class="hero" id="home">
-  <div class="hero-content">
+  <div>
     <div class="small-text">OFFICIAL ARTIST WEBSITE</div>
     <h1>MR MYSTERY</h1>
     <p>Music for the feelings you can't put into words.</p>
 
-    <div class="buttons">
-      <a class="btn"
-         href="https://audiomack.com/that-boy-praise/song/nobody-saw-me"
-         target="_blank" rel="noopener">
-        ▶ Listen to My Music
-      </a>
+    <a class="btn"
+       href="https://audiomack.com/that-boy-praise/song/nobody-saw-me"
+       target="_blank">
+      Listen on Audiomack
+    </a>
 
-      <a class="btn dark" href="#music">
-        Explore Music
-      </a>
-    </div>
+    <a class="btn dark" href="#music">Explore Music</a>
   </div>
 </header>
 
@@ -310,27 +260,20 @@ footer strong {
   </div>
 
   <div class="featured">
-    <img
-      class="cover"
-      src="nobody-saw-me.png"
-      alt="Nobody Saw Me cover artwork by Mr Mystery">
+    <img class="cover"
+         src="nobody-saw-me.png"
+         alt="Nobody Saw Me artwork">
 
     <div class="song-number">FEATURED RELEASE</div>
-    <h3>Nobody Saw Me</h3>
+    <h2>Nobody Saw Me</h2>
 
-    <p>
-      A song about the struggles people don't always see,
-      the battles we keep inside, and finding the strength
-      to keep moving forward.
-    </p>
+    <p>A song about hidden struggles, perseverance and hope.</p>
 
-    <div class="buttons">
-      <a class="btn"
-         href="https://audiomack.com/that-boy-praise/song/nobody-saw-me"
-         target="_blank" rel="noopener">
-        Listen on Audiomack
-      </a>
-    </div>
+    <a class="btn"
+       href="https://audiomack.com/that-boy-praise/song/nobody-saw-me"
+       target="_blank">
+      Listen Now
+    </a>
   </div>
 
   <div class="music-grid">
@@ -340,47 +283,174 @@ footer strong {
       <p>Mr Mystery</p>
       <a class="btn"
          href="https://audiomack.com/that-boy-praise/song/nobody-saw-me"
-         target="_blank" rel="noopener">
-        Listen Now
-      </a>
+         target="_blank">Listen</a>
     </div>
 
     <div class="song-card">
       <div class="song-number">02</div>
       <h3>Fake Love</h3>
       <p>Coming soon</p>
-      <span style="color:#777;">New music on the way.</span>
     </div>
   </div>
 </section>
 
 <section id="lyrics">
   <div class="section-title">
-    <h2>Lyrics</h2>
-    <p>Read the stories behind the music.</p>
+    <h2>Song Lyrics</h2>
+    <p>Discover the words behind the music.</p>
   </div>
 
-  <div class="lyrics-box">
+  <div class="lyrics-card">
     <h3>Nobody Saw Me</h3>
 
-Nobody saw the nights I prayed.
-Nobody saw the price I paid.
+    <h4>VERSE 1</h4>
+    <p>I had a thousand words, but I kept them inside
+Smiled for the world while I cried in the night
+Everybody saw me, but nobody knew
+How many times I had to fight my way through
 
-Now I'm standing here,
-still holding on.
+I walked through the rain with a heart full of dreams
+Nothing was easy, nothing was what it seemed
+They told me to wait, they told me to let go
+But something inside me said, "Keep moving on"</p>
 
-Look at me now,
-I'm not gone.
+    <h4>PRE-CHORUS</h4>
+    <p>And I know the road was long
+I know sometimes I felt alone
+But every tear became a reason
+To keep holding on</p>
 
-Nobody knew how hard I tried.
-Nobody saw what I kept inside.
+    <h4>CHORUS</h4>
+    <p>Nobody saw the nights I prayed
+Nobody saw the price I paid
+Now I'm standing here, still holding on
+Look at me now, I'm not gone
 
-And if tomorrow brings the light,
-I'll know I made it through the night.
+Nobody knew how hard I tried
+Nobody saw what I kept inside
+And if tomorrow brings the light
+I'll know I made it through the night</p>
 
-    <p style="color:#777;margin-top:20px;">
-      More lyrics coming soon...
-    </p>
+    <h4>VERSE 2</h4>
+    <p>There were days I questioned everything
+Wondering if my dreams would ever mean a thing
+But I remembered the voice that said
+"Your story isn't over yet"
+
+So I'll keep walking, even when I'm slow
+I'll keep believing in the things I don't know
+And when the day finally comes my way
+I'll remember every step I made</p>
+
+    <h4>BRIDGE</h4>
+    <p>If you're somewhere feeling like nobody cares
+If you're carrying a weight nobody sees
+Keep going, keep going
+Your story isn't finished
+
+Keep going, keep going
+There's still a light ahead</p>
+
+    <h4>FINAL CHORUS</h4>
+    <p>Nobody saw the nights I prayed
+Nobody saw the price I paid
+Now I'm standing here, still holding on
+Look at me now, I'm not gone
+
+Nobody knew how hard I tried
+Nobody saw what I kept inside
+And if tomorrow brings the light
+I'll know I made it through the night</p>
+
+    <h4>OUTRO</h4>
+    <p>Maybe they never saw me then...
+But one day they'll understand.</p>
+  </div>
+
+  <div class="lyrics-card">
+    <h3>Fake Love</h3>
+
+    <h4>VERSE 1</h4>
+    <p>I gave you my heart, I gave you my trust
+Thought what we had was more than enough
+You looked in my eyes and called it love
+But now I see it was never us
+
+I was holding on while you let go
+I believed every word you told me
+Now I'm sitting here asking myself
+How could I have been so blind?</p>
+
+    <h4>PRE-CHORUS</h4>
+    <p>You made me feel like I was the one
+Then you disappeared when the feeling was gone
+I gave you everything I had
+Now all I have are memories</p>
+
+    <h4>CHORUS</h4>
+    <p>It was fake love, fake love
+You made me believe in something that was never real
+Fake love, fake love
+You gave me a heart that you didn't know how to feel
+
+I would've stayed, I would've fought
+But you were already letting go
+Now I know, now I know
+It was fake love all along</p>
+
+    <h4>VERSE 2</h4>
+    <p>I remember every little promise
+Every "forever," every "I'm here"
+Now those words don't mean anything
+They're just echoes that I still hear
+
+Maybe I loved you more than I loved myself
+Maybe I ignored what everybody could tell
+I wanted the story to have a happy end
+But some stories aren't meant to last</p>
+
+    <h4>PRE-CHORUS</h4>
+    <p>You made me feel like I was the one
+Then you disappeared when the feeling was gone
+I gave you everything I had
+Now all I have are memories</p>
+
+    <h4>CHORUS</h4>
+    <p>It was fake love, fake love
+You made me believe in something that was never real
+Fake love, fake love
+You gave me a heart that you didn't know how to feel
+
+I would've stayed, I would've fought
+But you were already letting go
+Now I know, now I know
+It was fake love all along</p>
+
+    <h4>BRIDGE</h4>
+    <p>I won't hate you
+I just wish you told the truth
+Maybe then I wouldn't have
+Given all of me to you
+
+Now I'm learning how to let you go
+Even though my heart still says your name
+Some lessons hurt more than others
+But I'll never love the same</p>
+
+    <h4>FINAL CHORUS</h4>
+    <p>Fake love, fake love
+You made me believe in something that was never real
+Fake love, fake love
+I gave you a heart you didn't know how to feel
+
+I would've stayed, I would've fought
+But you were already letting go
+Now I know, now I know
+It was fake love all along</p>
+
+    <h4>OUTRO</h4>
+    <p>I thought you were my forever...
+But you were only a lesson.</p>
   </div>
 </section>
 
@@ -390,19 +460,13 @@ I'll know I made it through the night.
   </div>
 
   <div class="about-box">
-    <p>
-      Mr Mystery is an independent artist creating emotional
-      music inspired by real feelings, real stories and
-      experiences people sometimes keep hidden.
+    Mr Mystery is an independent artist creating emotional
+    music inspired by real feelings, real stories and experiences.
 
-      <br><br>
+    <br><br>
 
-      The vision is bigger than one place.
-
-      <br><br>
-
-      Music that can connect with people anywhere in the world.
-    </p>
+    The vision is bigger than one place.
+    Music that can connect with people anywhere in the world.
   </div>
 </section>
 
@@ -415,13 +479,9 @@ I'll know I made it through the night.
   <div class="social">
     <a class="btn"
        href="https://audiomack.com/that-boy-praise"
-       target="_blank" rel="noopener">
-      Audiomack
-    </a>
+       target="_blank">Audiomack</a>
 
-    <a class="btn dark" href="#">
-      TikTok Coming Soon
-    </a>
+    <a class="btn dark" href="#">TikTok Coming Soon</a>
   </div>
 </section>
 
