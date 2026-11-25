@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="description" content="Official website of Mr Mystery. Discover music, lyrics and new releases.">
 <title>Mr Mystery | Official Website</title>
 
 <style>
@@ -20,42 +21,38 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #070707;
-  color: #fff;
+  color: white;
   line-height: 1.6;
   overflow-x: hidden;
 }
-
-/* NAVIGATION */
 
 nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(5,5,5,0.96);
+  background: rgba(5,5,5,.97);
   border-bottom: 1px solid #252525;
   padding: 15px 10px;
   text-align: center;
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: bold;
-  letter-spacing: 3px;
-  margin-bottom: 9px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
 }
 
 nav a {
   color: #ccc;
   text-decoration: none;
-  margin: 0 6px;
-  font-size: 12px;
+  margin: 0 7px;
+  font-size: 13px;
 }
 
 nav a:hover {
-  color: #ff2020;
+  color: #ff3030;
 }
-
-/* HERO */
 
 .hero {
   min-height: 75vh;
@@ -65,8 +62,8 @@ nav a:hover {
   text-align: center;
   padding: 70px 20px;
   background:
-    radial-gradient(circle at 50% 15%, rgba(170,0,0,.55), transparent 42%),
-    linear-gradient(145deg,#170000,#050505 65%);
+    radial-gradient(circle at 50% 15%, rgba(170,0,0,.5), transparent 45%),
+    linear-gradient(145deg,#170000,#050505 70%);
 }
 
 .hero-content {
@@ -78,18 +75,18 @@ nav a:hover {
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 4px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .hero h1 {
   font-size: clamp(42px,12vw,82px);
   letter-spacing: 7px;
-  line-height: 1;
-  margin-bottom: 22px;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  color: #d0d0d0;
+  color: #ccc;
   font-size: 18px;
   max-width: 600px;
   margin: auto;
@@ -108,20 +105,25 @@ nav a:hover {
   font-weight: bold;
   background: #e50914;
   color: white;
+  transition: .2s;
+}
+
+.btn:hover {
+  background: #ff3030;
+  transform: translateY(-2px);
 }
 
 .btn.dark {
   background: transparent;
-  border: 1px solid #666;
+  border: 1px solid #777;
 }
-
-/* SECTIONS */
 
 section {
   width: 100%;
   max-width: 950px;
   margin: auto;
   padding: 75px 20px;
+  scroll-margin-top: 100px;
 }
 
 .section-title {
@@ -138,21 +140,6 @@ section {
   color: #888;
 }
 
-/* COVER ART */
-
-.cover {
-  width: 100%;
-  max-width: 330px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 25px;
-  border-radius: 18px;
-  box-shadow: 0 20px 60px rgba(0,0,0,.6);
-}
-
-/* FEATURED SONG */
-
 .featured {
   background: linear-gradient(135deg,#310000,#0b0b0b);
   border: 1px solid #481111;
@@ -161,68 +148,73 @@ section {
   text-align: center;
 }
 
+.cover {
+  display: block;
+  width: 100%;
+  max-width: 330px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin: 0 auto 25px;
+  border-radius: 18px;
+  box-shadow: 0 15px 45px rgba(0,0,0,.6);
+}
+
+.song-number {
+  color: #ff3030;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
 .featured h3 {
   font-size: 30px;
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 .featured p {
-  color: #c4c4c4;
+  color: #ccc;
   max-width: 650px;
   margin: auto;
 }
 
-/* MUSIC CARDS */
-
 .music-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   gap: 20px;
+  margin-top: 25px;
 }
 
 .song-card {
   background: linear-gradient(145deg,#191919,#0e0e0e);
   border: 1px solid #292929;
   border-radius: 20px;
-  padding: 28px;
-  min-height: 210px;
-}
-
-.song-number {
-  color: #e50914;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  padding: 27px;
 }
 
 .song-card h3 {
-  font-size: 25px;
+  font-size: 24px;
   margin: 12px 0 5px;
 }
 
 .song-card p {
   color: #999;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
-
-/* LYRICS */
 
 .lyrics-box {
   background: #101010;
   border: 1px solid #282828;
   border-radius: 20px;
   padding: 28px;
+  color: #ddd;
   white-space: pre-line;
-  color: #d5d5d5;
 }
 
 .lyrics-box h3 {
-  color: white;
   font-size: 25px;
   margin-bottom: 20px;
+  color: white;
 }
-
-/* ABOUT */
 
 .about-box {
   text-align: center;
@@ -233,18 +225,14 @@ section {
 }
 
 .about-box p {
-  color: #c7c7c7;
+  color: #ccc;
   max-width: 700px;
   margin: auto;
 }
 
-/* SOCIAL */
-
 .social {
   text-align: center;
 }
-
-/* FOOTER */
 
 footer {
   text-align: center;
@@ -258,9 +246,11 @@ footer strong {
   color: white;
 }
 
-/* MOBILE */
-
-@media (max-width:600px) {
+@media(max-width:600px) {
+  nav a {
+    margin: 0 5px;
+    font-size: 12px;
+  }
 
   .hero {
     min-height: 65vh;
@@ -269,10 +259,6 @@ footer strong {
 
   .hero h1 {
     letter-spacing: 5px;
-  }
-
-  .hero p {
-    font-size: 17px;
   }
 
   section {
@@ -288,83 +274,161 @@ footer strong {
 
 <body>
 
-<!-- NAVIGATION -->
-
 <nav>
   <div class="logo">MR MYSTERY</div>
-
   <a href="#home">Home</a>
   <a href="#music">Music</a>
   <a href="#lyrics">Lyrics</a>
   <a href="#about">About</a>
+  <a href="#follow">Follow</a>
 </nav>
 
-
-<!-- HERO -->
-
 <header class="hero" id="home">
-
   <div class="hero-content">
-
-    <div class="small-text">
-      OFFICIAL ARTIST WEBSITE
-    </div>
-
+    <div class="small-text">OFFICIAL ARTIST WEBSITE</div>
     <h1>MR MYSTERY</h1>
-
-    <p>
-      Music for the feelings you can't put into words.
-    </p>
+    <p>Music for the feelings you can't put into words.</p>
 
     <div class="buttons">
-
-      <a
-        class="btn"
-        href="https://audiomack.com/that-boy-praise/song/nobody-saw-me"
-        target="_blank">
-        ▶ Listen to Nobody Saw Me
+      <a class="btn"
+         href="https://audiomack.com/that-boy-praise/song/nobody-saw-me"
+         target="_blank" rel="noopener">
+        ▶ Listen to My Music
       </a>
 
       <a class="btn dark" href="#music">
         Explore Music
       </a>
-
     </div>
-
   </div>
-
 </header>
 
-
-<!-- MUSIC -->
-
 <section id="music">
-
   <div class="section-title">
-
-    <h2>Music</h2>
-
-    <p>
-      Stories, emotions and moments turned into music.
-    </p>
-
+    <h2>My Music</h2>
+    <p>Stories, emotions and moments turned into music.</p>
   </div>
 
-
   <div class="featured">
-
     <img
       class="cover"
-      src="nobody-saw-me.jpg"
-      alt="Nobody Saw Me by Mr Mystery">
+      src="nobody-saw-me.png"
+      alt="Nobody Saw Me cover artwork by Mr Mystery">
 
-    <div class="song-number">
-      FEATURED SONG
-    </div>
-
+    <div class="song-number">FEATURED RELEASE</div>
     <h3>Nobody Saw Me</h3>
 
     <p>
       A song about the struggles people don't always see,
       the battles we keep inside, and finding the strength
-      to keep moving
+      to keep moving forward.
+    </p>
+
+    <div class="buttons">
+      <a class="btn"
+         href="https://audiomack.com/that-boy-praise/song/nobody-saw-me"
+         target="_blank" rel="noopener">
+        Listen on Audiomack
+      </a>
+    </div>
+  </div>
+
+  <div class="music-grid">
+    <div class="song-card">
+      <div class="song-number">01</div>
+      <h3>Nobody Saw Me</h3>
+      <p>Mr Mystery</p>
+      <a class="btn"
+         href="https://audiomack.com/that-boy-praise/song/nobody-saw-me"
+         target="_blank" rel="noopener">
+        Listen Now
+      </a>
+    </div>
+
+    <div class="song-card">
+      <div class="song-number">02</div>
+      <h3>Fake Love</h3>
+      <p>Coming soon</p>
+      <span style="color:#777;">New music on the way.</span>
+    </div>
+  </div>
+</section>
+
+<section id="lyrics">
+  <div class="section-title">
+    <h2>Lyrics</h2>
+    <p>Read the stories behind the music.</p>
+  </div>
+
+  <div class="lyrics-box">
+    <h3>Nobody Saw Me</h3>
+
+Nobody saw the nights I prayed.
+Nobody saw the price I paid.
+
+Now I'm standing here,
+still holding on.
+
+Look at me now,
+I'm not gone.
+
+Nobody knew how hard I tried.
+Nobody saw what I kept inside.
+
+And if tomorrow brings the light,
+I'll know I made it through the night.
+
+    <p style="color:#777;margin-top:20px;">
+      More lyrics coming soon...
+    </p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-title">
+    <h2>About Mr Mystery</h2>
+  </div>
+
+  <div class="about-box">
+    <p>
+      Mr Mystery is an independent artist creating emotional
+      music inspired by real feelings, real stories and
+      experiences people sometimes keep hidden.
+
+      <br><br>
+
+      The vision is bigger than one place.
+
+      <br><br>
+
+      Music that can connect with people anywhere in the world.
+    </p>
+  </div>
+</section>
+
+<section id="follow">
+  <div class="section-title">
+    <h2>Follow Mr Mystery</h2>
+    <p>Follow the journey as the music grows.</p>
+  </div>
+
+  <div class="social">
+    <a class="btn"
+       href="https://audiomack.com/that-boy-praise"
+       target="_blank" rel="noopener">
+      Audiomack
+    </a>
+
+    <a class="btn dark" href="#">
+      TikTok Coming Soon
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <strong>Mr Mystery</strong></p>
+  <p>Music • Emotion • Reality</p>
+</footer>
+
+</body>
+</html>
