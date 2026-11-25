@@ -1,80 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mr Mystery | Official</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr Mystery | Official</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #080808;
-      color: white;
-      line-height: 1.6;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    header {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px 20px;
-      background: linear-gradient(135deg, #080808, #1a0010, #080808);
-    }
+body {
+  font-family: Arial, sans-serif;
+  background: #080808;
+  color: white;
+  line-height: 1.6;
+}
 
-    .hero {
-      max-width: 700px;
-    }
+header {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 20px;
+  background:
+    radial-gradient(circle at top, #4a0000, transparent 45%),
+    linear-gradient(135deg, #080808, #170000, #080808);
+}
 
-    .hero h1 {
-      font-size: 55px;
-      letter-spacing: 4px;
-      margin-bottom: 10px;
-    }
+.hero {
+  max-width: 750px;
+}
 
-    .hero p {
-      color: #ccc;
-      font-size: 18px;
-      margin-bottom: 25px;
-    }
+.hero h1 {
+  font-size: 55px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 14px 25px;
-      margin: 6px;
-      border-radius: 30px;
-      background: #e50914;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.hero p {
+  color: #ccc;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
 
-    .btn.secondary {
-      background: transparent;
-      border: 1px solid #777;
-    }
+.btn {
+  display: inline-block;
+  padding: 13px 25px;
+  margin: 6px;
+  border-radius: 30px;
+  background: #e50914;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    section {
-      padding: 55px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+.btn.secondary {
+  background: transparent;
+  border: 1px solid #777;
+}
 
-    h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 65px 20px;
+}
 
-    .song {
-      background: #151515;
-      border-radius: 18px;
-      padding: 25px;
-      margin-top:
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.intro {
+  text-align: center;
+  color: #ccc;
+}
+
+.song {
+  background: #151515;
+  border: 1px solid #292929;
+  border-radius: 18px;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+.song h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.song p {
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.lyrics {
+  white-space: pre-line;
+  background: #111;
+  padding: 22px;
+  border-radius: 15px;
+  color: #ddd;
+}
+
+.about {
+  text-align: center;
+  color: #ccc;
+  max-width: 700px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 1px solid #222;
+  color: #888;
+}
+
+.social {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  section {
+    padding: 50px 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <h1>MR MYSTERY</h1>
+
+    <p>
+      Music for the feelings you can't put into words.
+    </p>
+
+    <a class="btn"
+       href="https://audiomack
